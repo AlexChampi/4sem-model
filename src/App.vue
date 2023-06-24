@@ -34,15 +34,6 @@ export default {
     ,
     methods: {
         validateInput() {
-            // var cnt = 0;
-            // for (let i = 0; i < Math.pow(2, this.numberOfQubits); i++) {
-            //     cnt += this.arr1.get([i]).re + this.arr1.get([i]).im;
-            // }
-            // if (cnt - 0.1 <= 1 && cnt + 0.1 >= 1) {
-            //     this.error = "Некорректный ввод!"
-            //     return false;
-            // }
-            // this.error = "";
             return true;
         },
         multiplyOnIdentity(n, m) {

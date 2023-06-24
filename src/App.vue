@@ -236,16 +236,6 @@ export default {
             }
             var t0 = complex(0, 0);
             var t1 = complex(1, 0);
-            // var m4 = matrix([
-            //     [t1, t0, t0, t0, t0, t0, t0, t0],
-            //     [t0, t1, t0, t0, t0, t0, t0, t0],
-            //     [t0, t0, t1, t0, t0, t0, t0, t0],
-            //     [t0, t0, t0, t1, t0, t0, t0, t0],
-            //     [t0, t0, t0, t0, t1, t0, t0, t0],
-            //     [t0, t0, t0, t0, t0, t1, t0, t0],
-            //     [t0, t0, t0, t0, t0, t0, t0, t1],
-            //     [t0, t0, t0, t0, t0, t0, t1, t0]
-            // ]);
             var newArr = subset(this.arr1, index(range(0, Math.pow(2, this.numberOfQubits))));
             var res = matrix([
                 [t1, t0, t0, t0, t0, t0, t0, t0],
@@ -258,14 +248,6 @@ export default {
                 [t0, t0, t0, t0, t0, t0, t1, t0]
             ]);
             console.log(res.toString());
-            // if (this.CCNOTControlQubit1 === 1) {
-            //     res = this.multiplyOnIdentity(this.numberOfQubits - 2, m4);
-            //     console.log(res.toString());
-            // } else {
-            //     res = this.multiplyOnIdentity(this.CCNOTControlQubit1 - 1, res);
-            //     res = kron(res, m4);
-            //     res = this.multiplyOnIdentity(this.numberOfQubits - this.CCNotTargetQubit - 1, res);
-            // }
             var reMul = multiply(res, matrix(newArr));
             console.log(reMul.toString())
             let i = 0;

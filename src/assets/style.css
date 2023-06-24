@@ -1,0 +1,147 @@
+:root {
+    background-color: rgb(240, 240, 240);
+}
+#appl {
+    display: flex;
+    flex-direction: row;
+    background-color: gainsboro;
+    padding: 0;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+
+table {
+    width: 300px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    ;
+}
+
+.main {
+    width: 650px;
+    height: 930px;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.table {
+    background-color: white;
+    width: 300px;
+    height: 700px;
+    border: 1px solid gray;
+}
+
+th {
+    width: 5px;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 0;
+    height: 30px;
+}
+tr {
+    margin: 1px;
+}
+tr input {
+    padding: 0;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+
+.main .body {
+    display: flex;
+    justify-content: row;
+}
+
+
+.footer {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input-field input {
+    width: 400px;
+    border: 1px solid gray;
+    border-radius: 0;
+}
+
+.setters {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.g-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.g-buttons button {
+    margin-top: 5px;
+    width: 280px;
+}
+
+.qbit-numbers input {
+    width: 40px;
+}
+
+.sidebar {
+    width: 350px;
+    height: 930px;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    margin: 10px 0;
+}
+
+.block .name {
+    margin-bottom: 5px;
+}
+
+.block .s-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+
+    border-top: 1px solid black
+}
+
+.s-buttons button {
+    width: 290px;
+    margin: 0 5px 5px 5px;
+}
+
+.int-input {
+    margin: 5px;
+}
+
+.int-input input {
+    width: 40px;
+}
+
+.error {
+    color: red;
+}
